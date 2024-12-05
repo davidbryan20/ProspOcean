@@ -95,16 +95,3 @@ Criar uma solução que:
    Kafka__BootstrapServers=localhost:9092
    AzureAI__ApiKey=SUA_CHAVE_DO_AZURE
 
-
-
-APIs:
-.NET: http://localhost:5000/swagger.
-Java: http://localhost:8080/swagger-ui.html.
-🧪 Testes Automatizados
-.NET
-Execute os testes no backend .NET com o seguinte comando:
-
-bash
-Copiar código
-cd backend/dotnet
-dotnet test
