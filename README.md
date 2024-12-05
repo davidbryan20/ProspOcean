@@ -82,7 +82,7 @@ Criar uma solução que:
 ### **Passos**
 1. Clone o repositório:  
    ```bash
-   git clone https://github.com/ProspOcean/ProspOcean.git
+   git clone https://github.com/davidbryan20/ProspOcean.git
    cd ProspOcean
 
 2. Configure as variáveis de ambiente:  
@@ -95,48 +95,8 @@ Criar uma solução que:
    Kafka__BootstrapServers=localhost:9092
    AzureAI__ApiKey=SUA_CHAVE_DO_AZURE
 
- ### **Para Java**:
-Crie um arquivo `.env` com o seguinte conteúdo para configurar as variáveis de ambiente:
 
-```env
-spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
-spring.datasource.username=seu_usuario
-spring.datasource.password=sua_senha
-kafka.bootstrap-servers=localhost:9092
-azure.ai.api-key=SUA_CHAVE_DO_AZURE
-Inicie os serviços de suporte (opcional, caso utilize Docker):
-Certifique-se de que o MongoDB, OracleDB, e Kafka estão configurados e rodando. Você pode usar o Docker Compose para facilitar:
 
-bash
-Copiar código
-docker-compose up -d
-Inicie o backend:
-.NET API:
-Navegue até o diretório do backend .NET e execute os seguintes comandos:
-
-bash
-Copiar código
-cd backend/dotnet
-dotnet build
-dotnet run
-Java API:
-Navegue até o diretório do backend Java e execute os seguintes comandos:
-
-bash
-Copiar código
-cd backend/java
-mvn clean install
-mvn spring-boot:run
-Execute o frontend:
-Navegue até o diretório do frontend e inicie a aplicação:
-
-bash
-Copiar código
-cd frontend
-npm install
-npm start
-Acesse a aplicação:
-Frontend: Disponível em http://localhost:3000.
 APIs:
 .NET: http://localhost:5000/swagger.
 Java: http://localhost:8080/swagger-ui.html.
