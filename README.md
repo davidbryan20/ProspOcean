@@ -94,3 +94,82 @@ Criar uma solução que:
    MongoDb__DatabaseName=ProspOcean
    Kafka__BootstrapServers=localhost:9092
    AzureAI__ApiKey=SUA_CHAVE_DO_AZURE
+
+   Para Java:
+
+env
+Copiar código
+spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
+spring.datasource.username=seu_usuario
+spring.datasource.password=sua_senha
+kafka.bootstrap-servers=localhost:9092
+azure.ai.api-key=SUA_CHAVE_DO_AZURE
+Inicie os serviços de suporte (opcional, caso utilize Docker):
+Certifique-se de que o MongoDB, OracleDB, e Kafka estão configurados e rodando. Você pode usar o Docker Compose para facilitar:
+
+bash
+Copiar código
+docker-compose up -d
+Inicie o backend:
+
+.NET API
+Navegue até o diretório do backend .NET:
+bash
+Copiar código
+cd backend/dotnet
+dotnet build
+dotnet run
+Java API
+Navegue até o diretório do backend Java:
+bash
+Copiar código
+cd backend/java
+mvn clean install
+mvn spring-boot:run
+Execute o frontend:
+Navegue até o diretório do frontend e inicie a aplicação:
+
+bash
+Copiar código
+cd frontend
+npm install
+npm start
+Acesse a aplicação:
+
+Frontend: Disponível em http://localhost:3000.
+APIs:
+.NET: http://localhost:5000/swagger.
+Java: http://localhost:8080/swagger-ui.html.
+🧪 Testes
+Testes Automatizados
+.NET
+Execute os testes com o comando:
+
+bash
+Copiar código
+cd backend/dotnet
+dotnet test
+Java
+Execute os testes com o Maven:
+
+bash
+Copiar código
+cd backend/java
+mvn test
+Postman
+Importar a coleção disponível no diretório tests/postman e rodar os testes usando o Newman:
+
+bash
+Copiar código
+newman run tests/postman/ProspOcean.postman_collection.json
+📂 Estrutura do Repositório
+plaintext
+Copiar código
+ProspOcean/
+├── backend/
+│   ├── dotnet/               # Backend .NET
+│   ├── java/                 # Backend Java
+├── frontend/                 # Aplicação Frontend
+├── tests/                    # Scripts de testes e coleções Postman
+├── docs/                     # Documentação do projeto
+└── docker-compose.yml        # Configuração do Docker Compose
