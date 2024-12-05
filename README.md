@@ -60,7 +60,7 @@ Criar uma solução que:
 ## 💼 **Contribuições**
 ### **Desenvolvedores**
 - **Agatha Pires**  
-- **Bryan Sales**  
+- **Murilo Matos**  
 - **Gabriel Lima**  
 - **Giovanna Alvarez**  
 
