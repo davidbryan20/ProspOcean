@@ -1,0 +1,69 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<div class="container mt-4">
+    <!-- Banner Section -->
+    <div class="jumbotron text-center bg-primary text-white py-5">
+        <h1 class="display-4">Bem-vindo à ProspOcean</h1>
+        <p class="lead">Sua plataforma para conservação e pesquisa marinha.</p>
+        <a class="btn btn-light btn-lg" asp-controller="Conservacaos" asp-action="Index" role="button">Explorar Projetos de Conservação</a>
+    </div>
+
+    <!-- About Section -->
+    <div class="row mt-5">
+        <div class="col-md-6">
+            <h2>Sobre Nós</h2>
+            <p>A ProspOcean é dedicada à preservação das espécies marinhas e ao avanço da pesquisa oceanográfica. Nossa missão é promover a conservação dos ecossistemas marinhos e educar o público sobre a importância do oceano.</p>
+            <p><a class="btn btn-secondary" asp-controller="Home" asp-action="Privacy" role="button">Saiba mais &raquo;</a></p>
+        </div>
+        <div class="col-md-6">
+            <div class="card bg-light">
+                <div class="card-body">
+                    <h5 class="card-title">Nossa Missão</h5>
+                    <p class="card-text">Promover a conservação dos ecossistemas marinhos e educar o público sobre a importância do oceano.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Conservation Projects Section -->
+    <div class="row mt-5">
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Projeto de Conservação 1</h5>
+                    <p class="card-text">Descrição breve do projeto de conservação 1.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Projeto de Conservação 2</h5>
+                    <p class="card-text">Descrição breve do projeto de conservação 2.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h5 class="card-title">Projeto de Conservação 3</h5>
+                    <p class="card-text">Descrição breve do projeto de conservação 3.</p>
+                    <a href="#" class="btn btn-primary">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Contact Section -->
+    <div class="row mt-5 mb-5">
+        <div class="col-md-12 text-center">
+            <h2>Entre em Contato</h2>
+            <p>Tem alguma dúvida? Gostaria de saber mais sobre nossos projetos? Entre em contato conosco!</p>
+            <a class="btn btn-primary btn-lg" asp-controller="Home" asp-action="Privacy" role="button">Contato</a>
+        </div>
+    </div>
+</div>
