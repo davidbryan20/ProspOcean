@@ -95,10 +95,10 @@ Criar uma solução que:
    Kafka__BootstrapServers=localhost:9092
    AzureAI__ApiKey=SUA_CHAVE_DO_AZURE
 
-   Para Java:
+ ### **Para Java**:
+Crie um arquivo `.env` com o seguinte conteúdo para configurar as variáveis de ambiente:
 
-env
-Copiar código
+```env
 spring.datasource.url=jdbc:oracle:thin:@localhost:1521:xe
 spring.datasource.username=seu_usuario
 spring.datasource.password=sua_senha
@@ -111,16 +111,17 @@ bash
 Copiar código
 docker-compose up -d
 Inicie o backend:
+.NET API:
+Navegue até o diretório do backend .NET e execute os seguintes comandos:
 
-.NET API
-Navegue até o diretório do backend .NET:
 bash
 Copiar código
 cd backend/dotnet
 dotnet build
 dotnet run
-Java API
-Navegue até o diretório do backend Java:
+Java API:
+Navegue até o diretório do backend Java e execute os seguintes comandos:
+
 bash
 Copiar código
 cd backend/java
@@ -135,41 +136,15 @@ cd frontend
 npm install
 npm start
 Acesse a aplicação:
-
 Frontend: Disponível em http://localhost:3000.
 APIs:
 .NET: http://localhost:5000/swagger.
 Java: http://localhost:8080/swagger-ui.html.
-🧪 Testes
-Testes Automatizados
+🧪 Testes Automatizados
 .NET
-Execute os testes com o comando:
+Execute os testes no backend .NET com o seguinte comando:
 
 bash
 Copiar código
 cd backend/dotnet
 dotnet test
-Java
-Execute os testes com o Maven:
-
-bash
-Copiar código
-cd backend/java
-mvn test
-Postman
-Importar a coleção disponível no diretório tests/postman e rodar os testes usando o Newman:
-
-bash
-Copiar código
-newman run tests/postman/ProspOcean.postman_collection.json
-📂 Estrutura do Repositório
-plaintext
-Copiar código
-ProspOcean/
-├── backend/
-│   ├── dotnet/               # Backend .NET
-│   ├── java/                 # Backend Java
-├── frontend/                 # Aplicação Frontend
-├── tests/                    # Scripts de testes e coleções Postman
-├── docs/                     # Documentação do projeto
-└── docker-compose.yml        # Configuração do Docker Compose
