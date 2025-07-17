@@ -1,0 +1,30 @@
+name: CI - ProspOcean
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Checkout do código
+        uses: actions/checkout@v2
+
+      - name: ⚙️ Configurar .NET
+        uses: actions/setup-dotnet@v3
+        with:
+          dotnet-version: '8.0.x'
+
+      - name: 📦 Restaurar dependências
+        run: dotnet restore
+
+      - name: 🛠️ Build do projeto
+        run: dotnet build --no-restore
+
+      - name: ✅ Rodar testes 
+        run: dotnet test --no-build --verbosity normal
